@@ -1,0 +1,440 @@
+/* GLOBAL STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    background-size: cover;
+    color: #3C3633;
+}
+
+h1 {
+    color: #3C3633;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    color: #3C3633;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #3C3633;
+    text-transform: uppercase;
+}
+
+/* NAVBAR */
+.navbar {
+    color: #ffffff !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; 
+    z-index: 1000 !important;
+    background-color: #003060 !important;
+    border-bottom: none !important;
+    border-bottom-right-radius: 80px !important;
+    border-bottom-left-radius: 80px !important;
+    transition: background-color 0.3s ease !important; /* Smooth transition */
+}
+  
+.brand-name {
+    color: #FF7D29 !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+  
+.custom-nav-link {
+    padding: 10px 20px !important;
+}
+  
+.navbar-nav .nav-link {
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: #ffffff !important;
+}
+  
+.navbar-nav .nav-link:hover {
+    color: rgb(98, 98, 98) !important;
+}
+  
+.nav-link.active {
+    color: #F9C324 !important;
+    border-bottom: 2px solid #F9C324 !important;
+}
+
+.custom-btn {
+    background-color: #F9C324 !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    animation-delay: 1.5s !important;
+}
+  
+.custom-btn:hover {
+    background-color: #987817 !important; /* Change to a darker shade on hover */
+    color: #ffffff !important; /* Text color */
+}
+
+/* IMAGE BANNER SECTION */
+.image-banner-section {
+    margin-top: 80px; /* Adjust based on navbar height */
+    padding: 0;
+    top: 80px; /* Adjust based on navbar height */
+    z-index: 999; /* Ensures it stays above other content */
+}
+
+.image-banner-section img.banner-image {
+    width: 100%; /* Image takes full width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 250px; /* Restrict minimum height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    display: block; /* Removes any extra space around the image */
+    margin-top: -70px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+/* END OF IMAGE BANNER SECTION */
+
+/* ABOUT SECTION */
+.about-section {
+    margin-top: 50px;
+}
+
+.about-content {
+    padding: 0 100px;
+}
+
+.about-content img{
+    width: 500px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.white-p > p {  
+    color: white;
+}
+/* END OF ABOUT SECTION */
+
+/* ROADWISE STORY SECTION */
+.roadwise-story {
+    background: url('images/SmallRDBG.png') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.roadwise-story .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.roadwise-story h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.yellow-text {
+    color: #FFC107;
+}
+
+/* Team Section */
+.team-section {
+    padding: 40px 20px;
+}
+
+.team-title {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1a73e8;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* License Card Container */
+#roadwise-team {
+    text-align: center;
+    padding: 50px 0;
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(71,70,70,1) 67%); */
+}
+
+.title-container img {
+    width: 700px;
+    height: auto;
+}
+
+.license-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.license-container img {
+    width: 500px; /* Adjust based on actual image size */
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.license-container img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    cursor: pointer;
+}
+
+/* LTO Section Styling */
+.lto-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 1600px; /* Adjust as needed */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin-top: 50px;
+}
+
+
+/* Info Box Styling */
+.info-box {
+    background: linear-gradient(135deg, #2C6EB5, #1A4C8B);
+    width: 1600px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* LTO Logo */
+.LTO-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Title */
+h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.info-box > p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.LTO-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Road Button */
+.road-button {
+    bottom: 150px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.road-button:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+/* Signs Button */
+.signs-button {
+    bottom: 150px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signs-button:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* TRAVEL PARTNERS SECTION */
+.partners-section {
+    background-color: #ffffff; /* Light grey background */
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+  }
+  
+  .partners-title h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Frank Ruhl Libre", serif;
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  
+  /* Grid Layout for Partner Logos */
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .partner-logo img {
+    width: 250px;
+    height: auto;
+    filter: grayscale(100%); /* Make logos grey */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  
+  .partner-logo img:hover {
+    filter: grayscale(0%); /* Remove grayscale effect on hover */
+    opacity: 1;
+    transform: scale(1.03); /* Slightly enlarge the logo */
+  }
+  
+  .partners-title h3 {
+    font-weight: bold;
+  }
+
+/* FOOTER */
+.footer-logo {
+    width: 200px;
+    
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    /* Make sure the image banner section and logo resize properly on smaller screens */
+    .image-banner-section img.banner-image {
+        max-height: 150px; /* Restrict minimum height */
+    }
+    .about-content img {
+        width: 200px;
+    }
+    .about-content {
+        padding: 0 10px;
+    }
+    .about-logo img {
+        width: 120px; /* Smaller logo on mobile */
+        margin-bottom: 10px;
+    }
+    .about-section h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+      
+    .about-section p {
+        font-size: 0.55rem;
+        font-weight: 400;
+    }
+
+    .intro-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 0.7rem; /* Even smaller paragraph text for mobile */
+    }
+
+    .mission-vision-section .row {
+        flex-direction: column; /* Stack the columns on mobile */
+    }
+
+    .mission-vision-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .mission-vision-section p {
+        font-size: 0.9rem;
+    }
+
+    .accreditation-section h2 {
+        font-size: 2rem;
+    }
+
+    .accreditation-section ul {
+        font-size: 0.8rem; /* Smaller text for accreditation items */
+    }
+
+    .section-subtitle {
+        text-align: center;
+    }
+
+    .accreditation-logo {
+        width: 60px; /* Make accreditation logos even smaller */
+    }
+}

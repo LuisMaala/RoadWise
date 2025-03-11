@@ -1,0 +1,424 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+}
+
+.yellow_text {
+    color: #FFC107;
+}
+
+/* NAVBAR */
+.navbar {
+    color: #ffffff !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; 
+    z-index: 1000 !important;
+    background-color: #003060 !important;
+    border-bottom: none !important;
+    border-bottom-right-radius: 80px !important;
+    border-bottom-left-radius: 80px !important;
+    transition: background-color 0.3s ease !important; /* Smooth transition */
+}
+  
+.brand-name {
+    color: #FF7D29 !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+  
+.custom-nav-link {
+    padding: 10px 20px !important;
+}
+  
+.navbar-nav .nav-link {
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: #ffffff !important;
+}
+  
+.navbar-nav .nav-link:hover {
+    color: rgb(98, 98, 98) !important;
+}
+  
+.nav-link.active {
+    color: #F9C324 !important;
+    border-bottom: 2px solid #F9C324 !important;
+}
+
+.custom-btn {
+    background-color: #F9C324 !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    animation-delay: 1.5s !important;
+}
+  
+.custom-btn:hover {
+    background-color: #987817 !important; /* Change to a darker shade on hover */
+    color: #ffffff !important; /* Text color */
+}
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust based on your design */
+    background: url('images/HeaderImage.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Centered */
+.logo {
+    width: 960px; /* Adjust logo size */
+    margin-bottom: 20px;
+}
+
+/* Play Now Button */
+.play-button {
+    position: absolute;
+    bottom: 150px;
+    background-color: #003060;
+    color: #ffcc00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    background-color: #025cb6;
+}
+
+.section-divider {
+    width: 100%;
+    height: 10px; /* Adjust height as needed */
+    background: url('/images/ROAD.png') repeat-x center;
+    
+}
+
+/* ABOUT SECTION */
+.about-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0; /* Adjust padding for spacing */
+    background: url('images/ROADBG.png') no-repeat center center/cover; /* Set Background */
+    color: white; /* Text color for contrast */
+}
+
+/* Flexbox Layout */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+/* Logo Styling */
+.about-logo img {
+    width: 619px; /* Adjust as needed */
+}
+
+/* Text Styling */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Title Styling */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* TRAFFIC LIGHT SECTION */
+.traffic-light-section {
+    background: rgb(217,217,217);
+    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(71,70,70,1) 67%);
+    height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centered Title Image */
+.traffic-title img {
+    width: 500px; /* Adjust size */
+    margin-bottom: 40px;
+}
+
+/* Container */
+.traffic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Space between elements */
+}
+
+/* Left Image */
+.left-image {
+    width: 650px; /* Adjust size */
+}
+
+/* Traffic Light */
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Traffic Light Buttons */
+.light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.red-light {
+    background-color: red;
+}
+
+.yellow-light {
+    background-color: yellow;
+}
+
+.green-light {
+    background-color: green;
+}
+
+/* CHARACTER SECTION */
+.character-section {
+    height: 100%;
+    min-height: 190vh;
+    
+}
+
+
+.character-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Rodman {
+    background: rgb(217,217,217);
+    background: linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(71,70,70,1) 67%);
+}
+
+.Rod {
+    background-image: url('images/Tri.png'); /* Path to your triangle image */
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust as needed */
+    background-size: 550px;
+    margin-left: -20px;
+}
+
+.Wayne {
+    background: rgb(217,217,217);
+    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(71,70,70,1) 67%);
+}
+
+.Wayn {
+    background-image: url('images/Tri\(1\).png'); /* Path to your triangle image */
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust as needed */
+    background-size: 550px;
+    margin-right: -20px;
+}
+
+
+.character-image img {
+    width: 900px; /* Adjust based on your design */
+}
+
+.character-text {
+    max-width: 50%;
+}
+
+.bold-text {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.dark-text {
+    color: #474646;
+    padding-right: 100px;
+}
+
+.dark-text > h2 {
+    font-size: 2rem;
+}
+
+.dark-text > p {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.light-text {
+    color: #FFC107;
+    padding-left: 100px;
+}
+
+.light-text > h2 {
+    font-size: 2rem;
+}
+
+.light-text > p {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.yellow-text {
+    color: #FFC107;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+/* DRIVE AND UNLOCK SECTION */
+.parking-section {
+    height: 100vh; /* Takes full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(71,70,70,1);
+}
+/* Centering the Parking Lot */
+.parking-container {
+    position: relative;
+    width: 800px; /* Adjust based on your parking lot size */
+    height: 400px; /* Adjust based on your background */
+    margin-top: -100px;
+}
+
+/* TITLE */
+.parking-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 4rem;
+}
+
+
+/* Parking Lot Background */
+.parking-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* General Car Styling */
+.car {
+    position: absolute;
+    width: 290px; /* Adjust car size */
+    height: auto;
+}
+
+/* Position Each Car in a Specific Parking Spot */
+.car1 { top: 320px; left: -82px; }   /* Purple Car */
+.car2 { top: 320px; left: 144px; }  /* Black Car */
+.car3 { top: 100px; left: 367px; }  /* Locked Car */
+
+/* MAP SECTION */
+.map-section {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    background: rgb(217,217,217);
+    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(71,70,70,1) 67%);
+    position: relative;
+}
+
+/* MAP CONTAINER */
+.map-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+/* TITLE SIGN (Centered at the Top) */
+.map-sign {
+    margin-top: 50px;
+
+    width: 790px;
+    position: absolute;
+    top: -250px; /* Move higher */
+    left: 50%;
+    transform: translateX(-40%);
+}
+
+/* CAR WITH GPS */
+.car-gps {
+    width: 800px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* START BUTTON */
+.start-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00;
+    background: #003060;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    display: block;
+    margin: -100px auto 0 auto; /* Centered below */
+    margin-bottom: 100px;
+}
+
+.start-button:hover {
+    background: #025cb6;
+}
+
+.footer-logo {
+    width: 200px;
+    
+}
